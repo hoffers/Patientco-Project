@@ -1,0 +1,142 @@
+* {
+  color: white;
+  text-shadow: 0 1px 2px #333;
+}
+
+header {
+  background-color: #1aa951;
+  padding: 20px;
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.header-text {
+  font-size: 0.7em;
+  white-space:nowrap;
+}
+
+.left-col {
+  margin-bottom: 15px;
+}
+
+.context-div {
+  background-color: #1c4587;
+  height: 106px;
+  text-align: center;
+  border: 1px solid white;
+}
+
+.context-text {
+  padding-top: 32px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.highlight-div {
+  background-color: #4a86e8;
+  margin-top: 2px;
+  border: 1px solid white;
+}
+
+.highlight-row:nth-child(2) {
+  margin-left: 10%;
+}
+
+.highlight-row:nth-child(3) {
+  margin-left: 30%;
+}
+
+.highlight-row:nth-child(4) {
+  margin-left: 50%;
+}
+
+.highlight-value,
+.slice-value {
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.highlight-name,
+.slice-name {
+  font-size: 19px;
+}
+
+.slice-name {
+  color: black;
+  text-shadow: none;
+}
+
+.slice-wrapper {
+  padding: 0 2px 0 0;
+}
+
+.slice-div {
+  margin-left: 2px;
+  width: 100%;
+  padding-left: 15px;
+  border: 1px solid white;
+}
+
+.slice-wrapper:nth-child(1)>.slice-div {
+  background-color: #3b8ec7;
+}
+
+.slice-wrapper:nth-child(2)>.slice-div {
+  background-color: #9ecae1;
+}
+
+.slice-wrapper:nth-child(3)>.slice-div {
+  background-color: #427ea7;
+}
+
+/*Animation from http://ianlunn.github.io/Hover/*/
+.clickable {
+  display: inline-block;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px transparent;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  z-index: 10;
+}
+
+.clickable:hover,
+.clickable:focus,
+.clickable:active {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  cursor: pointer;
+  z-index: 9999;
+}
+
+.circle {
+  position: relative;
+  padding: 1% 10%;
+}
+
+@media screen and (min-width: 992px) {
+  .circle {
+    padding: 1% 20%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .circle {
+    padding: 1% 25%;
+  }
+}
+
+.center-text {
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -55px;
+  margin-top: -17px;
+  font-size: 25px;
+  font-weight: bold;
+  text-shadow: none;
+}
